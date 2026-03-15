@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edeka Alex Imperium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f6f6f6;
+color:#333;
+line-height:1.6;
+}
+
+/* HERO */
+
+.hero{
+height:70vh;
+background:url("https://images.unsplash.com/photo-1542838132-92c53300491e") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+}
+
+.hero-content{
+position:relative;
+z-index:1;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:60px 20px;
+}
+
+/* ANGEBOTE */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.card h3{
+color:#2f8f2f;
+margin-bottom:10px;
+}
+
+/* INFO */
+
+.info{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin-top:40px;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* MAP */
+
+.map{
+margin-top:40px;
+border-radius:12px;
+overflow:hidden;
+}
+
+/* FOOTER */
+
+footer{
+background:#2f8f2f;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:60px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:34px;
+}
+
+.info{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>EDEKA ALEX</h1>
+
+<p>Frische Lebensmittel & regionale Produkte</p>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<h2>Aktuelle Angebote</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Äpfel</h3>
+<p>1 kg nur <strong>1,99 €</strong></p>
+</div>
+
+<div class="card">
+<h3>Milch</h3>
+<p>1 Liter nur <strong>0,99 €</strong></p>
+</div>
+
+<div class="card">
+<h3>Brot</h3>
+<p>Frisch gebacken <strong>2,49 €</strong></p>
+</div>
+
+</div>
+
+
+<div class="info">
+
+<div class="box">
+
+<h2>Öffnungszeiten</h2>
+
+<p>
+Montag – Freitag<br>
+08:00 – 20:00
+</p>
+
+<p>
+Samstag<br>
+08:00 – 18:00
+</p>
+
+<p>
+Sonntag geschlossen
+</p>
+
+</div>
+
+<div class="box">
+
+<h2>Adresse</h2>
+
+<p>
+Edeka Alex HöSi<br>
+Musterstraße 12<br>
+12345 Musterstadt
+</p>
+
+<p>
+Tel: 01234 567890
+</p>
+
+</div>
+
+</div>
+
+
+<div class="map">
+
+<iframe
+width="100%"
+height="350"
+style="border:0"
+loading="lazy"
+allowfullscreen
+src="https://maps.google.com/maps?q=berlin&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Tims Easy Homepage 
+
+</footer>
+
+</body>
+</html>
